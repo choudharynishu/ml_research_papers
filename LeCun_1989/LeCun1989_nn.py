@@ -4,15 +4,16 @@ import json
 import argparse
 
 import numpy as np
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
+
 from tensorboardX import SummaryWriter
 class NeuralNetwork(nn.Module):
     def __init__(self):
         super().__init__()
-        # initialization as described in the paper to my best ability, but it doesn't look right...
         winit = lambda fan_in, *shape: (torch.rand(*shape) - 0.5) * 2 * 2.4 / fan_in ** 0.5
 
         '''
