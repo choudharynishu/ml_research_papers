@@ -8,14 +8,14 @@ The architecture and equations used are based on GoodFellow, Yoshua Bengio, and 
     note={\url{http://www.deeplearningbook.org}},
     year={2016}
 }`
-### Recurrent Neural Network architecture Page - 370
+Recurrent Neural Network architecture Page - 370
 ![Architecture](RNN_scratch/definition/definition_RNN.HEIC)
 
-### Parameter definitions 
-![Parameters](RNN_scratch/definition/definition_parameters.HEIC)
+Parameter definitions 
+![Parameters](/RNN_scratch/definition/definition_parameters.jpeg)
 
-### Prediction (Output) definition
-![Prediction definition](RNN_scratch/definition/definition_prob_dict.HEIC)
+Prediction (Output) definition
+![Prediction definition](/RNN_scratch/definition/definition_prob_dict.HEIC)
 
-### Loss function definition
-![Loss function defintion](RNN_scratch/definition/definition_loss_value.HEIC)
+Loss function definition
+![Loss function defintion](/RNN_scratch/definition/definition_loss_value.jpeg)
