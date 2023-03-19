@@ -9,13 +9,13 @@ The architecture and equations used are based on GoodFellow, Yoshua Bengio, and 
     year={2016}
 }`
 ### Recurrent Neural Network architecture Page - 370
-![Architecture](/definition/definition_RNN.HEIC)
+![Architecture](RNN_scratch/definition/definition_RNN.HEIC)
 
 ### Parameter definitions 
-![Parameters](/definition/definition_parameters.HEIC)
+![Parameters](RNN_scratch/definition/definition_parameters.HEIC)
 
 ### Prediction (Output) definition
-![Prediction definition](/definition/definition_prob_dict.HEIC)
+![Prediction definition](RNN_scratch/definition/definition_prob_dict.HEIC)
 
 ### Loss function definition
-![Loss function defintion](/definition/definition_loss_value.HEIC)
+![Loss function defintion](RNN_scratch/definition/definition_loss_value.HEIC)
