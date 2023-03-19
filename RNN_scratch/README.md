@@ -10,15 +10,15 @@ The architecture and equations used are based on GoodFellow, Yoshua Bengio, and 
 }`
 ### Recurrent Neural Network architecture Page - 370
 <p align="center">
-    <img src="/definition/definition_RNN.HEIC" width="350" title="hover text">
+    <img src="/RNN_scratch/definition/definition_RNN.HEIC" width="350" title="hover text">
 ![Architecture](RNN_scratch/definition/definition_RNN.HEIC)
 </p>
 ### Parameter definitions 
 
-![Parameters](RNN_scratch/definition/definition_parameters.HEIC)
+![Parameters](/RNN_scratch/definition/definition_parameters.jpeg)
 
 ### Prediction (Output) definition
-![Prediction definition](RNN_scratch/definition/definition_prob_dict.HEIC)
+![Prediction definition](/RNN_scratch/definition/definition_prob_dict.HEIC)
 
 ### Loss function definition
-![Loss function defintion](RNN_scratch/definition/definition_loss_value.HEIC)
+![Loss function defintion](/RNN_scratch/definition/definition_loss_value.HEIC)
