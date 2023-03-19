@@ -18,4 +18,4 @@ Prediction (Output) definition
 ![Prediction definition](/RNN_scratch/definition/definition_prob_dict.HEIC)
 
 Loss function definition
-![Loss function defintion](/RNN_scratch/definition/definition_loss_value.png)
+![Loss function defintion]([/RNN_scratch/definition/definition_loss_value.png](https://github.com/choudharynishu/ml_research_papers/blob/main/RNN_scratch/definition/definition_loss_value.png))
