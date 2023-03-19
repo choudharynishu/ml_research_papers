@@ -16,10 +16,12 @@ The architecture and equations used are based on GoodFellow, Yoshua Bengio, and 
 ![Derivative of Loss-function w.r.t V,c, and b](https://github.com/choudharynishu/ml_research_papers/blob/main/RNN_scratch/definition/derivative_dc_db_dV%20Small.png)
 ![Derivative of Loss-function w.r.t W and U](https://github.com/choudharynishu/ml_research_papers/blob/main/RNN_scratch/definition/derivative_dU_dW%20Small.png)
 Reference: 
-`@book{Goodfellow-et-al-2016,
+```
+@book{Goodfellow-et-al-2016,
     title={Deep Learning},
     author={Ian Goodfellow and Yoshua Bengio and Aaron Courville},
     publisher={MIT Press},
     note={\url{http://www.deeplearningbook.org}},
     year={2016}
-}`
+}
+```
