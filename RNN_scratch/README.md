@@ -9,9 +9,10 @@ The architecture and equations used are based on GoodFellow, Yoshua Bengio, and 
     year={2016}
 }`
 ### Recurrent Neural Network architecture Page - 370
-
+<p align="center">
+    <img src="/definition/definition_RNN.HEIC" width="350" title="hover text">
 ![Architecture](RNN_scratch/definition/definition_RNN.HEIC)
-
+</p>
 ### Parameter definitions 
 
 ![Parameters](RNN_scratch/definition/definition_parameters.HEIC)
