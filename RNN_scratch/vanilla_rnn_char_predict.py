@@ -27,7 +27,7 @@ sequence_length = 50  # No of x-vectors to estimate the final hidden state
 hidden_size = 100  # Number of neurons in the hidden layer of RNN (only one used here)
 learning_rate = 0.01  # Standard learning-rate
 
-# Initialize the parameters of the model
+# Initialize the parameters of the model - Variable definitions given in README.md
 # Multiplied by 0.01 for smaller (better) initializations
 U = np.random.randn(hidden_size, vocab_size) * 0.01
 W = np.random.randn(hidden_size, hidden_size) * 0.01
@@ -68,6 +68,7 @@ def loss_func(x_seq, y_seq, hidden_s):
     # Backpropagation Through Time (BPTT)
     dU, dW, dV, db, dc = map(lambda x: np.zeros_like(x), parameters)
     dh_tplus = np.zeros_like(h_dict[0])
+    # Derivative equations added in README.md
     for t in reversed(range(len(x_seq))):
         d_prob = np.copy(prob_dict[t])
         d_prob[y_seq[t]] -= 1.0
