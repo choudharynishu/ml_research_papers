@@ -1,4 +1,4 @@
-This repository implements a simple Recurrent Neural Network (RNN) with many-to-many architecture.
+This repository implements a simple Recurrent Neural Network (RNN) with many-to-many architecture from scratch using only Numpy.
 
 The architecture and equations used are based on GoodFellow, Yoshua Bengio, and Aaron Courville's 2016 book titled [Deep Learning](https://www.deeplearningbook.org/)
 
