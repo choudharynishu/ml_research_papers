@@ -3,8 +3,8 @@ This is the basic introduction to PyTorch package
 Tutorial material is obtained from the official website
 https://pytorch.org/tutorials/
 Authors of the Tutorials:
-Soumith Chintala, Suraj Subramanian, Seth Juarez, Cassie Breviu, Dmitry Soshnikov, Ari Bornstein
-Nishu Choudhary
+Soumith Chintala, Suraj Subramanian, Seth Juarez, Cassie Breviu, Dmitry Soshnikov, and Ari Bornstein
+
 06/16/2022
 '''
 #-----Installation-----#
@@ -136,7 +136,7 @@ def test(dataloader, model, loss_function):
     model.eval()
     test_loss, correct = 0, 0
 
-    #Why do we need to do this ?
+    #  Turn off the grad - mainly for efficiency as we won't be updating any parameters
     with torch.no_grad():
         for batch, (X,y) in enumerate(dataloader):
             pred = model(X)
@@ -151,7 +151,7 @@ def test(dataloader, model, loss_function):
 
     return None
 
-epochs = 1
+epochs = 5
 for t in range(epochs):
     print(f"Epoch {t+1}\n-------------------------------")
     train(train_dataloader, model, loss_function, optimizer)
