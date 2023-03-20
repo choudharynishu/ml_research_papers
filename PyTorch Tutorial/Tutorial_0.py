@@ -140,8 +140,8 @@ def test(dataloader, model, loss_function):
     with torch.no_grad():
         for batch, (X,y) in enumerate(dataloader):
             pred = model(X)
-            print(f"Trained model's predicted tensor's size, {pred.size()}")
-            print(f"Actual y, {y}")
+            #print(f"Trained model's predicted tensor's size, {pred.size()}")
+            #print(f"Actual y, {y}")
             test_loss += loss_function(pred, y)
             correct += (pred.argmax(1) == y).type(torch.float).sum().item()
 
