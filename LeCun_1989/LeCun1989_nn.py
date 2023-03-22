@@ -1,3 +1,11 @@
+'''
+This exercise is an implementation of LeCun et al. 1989 paper titled
+'Backpropagation Applied to Handwritten Zip Code Recognition' in PyTorch, inspired by
+Andrej Karapathy's blog https://karpathy.github.io/2022/03/14/lecun1989/
+
+According to the paper the training and testing set consisted of 7291 and 2007 images, respectively.
+'''
+
 import os
 import sys
 import json
@@ -14,6 +22,8 @@ from tensorboardX import SummaryWriter
 class NeuralNetwork(nn.Module):
     def __init__(self):
         super().__init__()
+        # weights are initialized using a uniform distribution between (-2.4/fan_in, 2.4/fan_in)
+        # where, fan_in refers to the total number of units (LeCun et al. 1989 page#6)
         winit = lambda fan_in, *shape: (torch.rand(*shape) - 0.5) * 2 * 2.4 / fan_in ** 0.5
 
         '''
