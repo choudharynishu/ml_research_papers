@@ -73,8 +73,6 @@ class NeuralNetwork(nn.Module):
     # -----------------------------------------------------------------------------
 
 if __name__ == '__main__':
-    '''This part of the code is completely from Karpathy's implementation'''
-
     parser = argparse.ArgumentParser(description="Train a 1989 LeCun ConvNet on digits")
     '''
      ArgumentParser.add_argument(name or flags...[, action][, nargs][, const][, default]
