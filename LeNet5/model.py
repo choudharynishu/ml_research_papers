@@ -58,7 +58,7 @@ if __name__ == '__main__':
     parser.add_argument('--batch-size', '-bs', type=int, default=64, help="Batch size for DataLoader")
     args = parser.parse_args()
     print(vars(args))
-
+    os.makedirs(os.path.join(sys.path[0], args.output_dir), exist_ok=True)
     # Experiment settings
     BATCH_SIZE = 64
     EPOCHS = 2
@@ -78,7 +78,7 @@ if __name__ == '__main__':
     transform_img = transforms.ToPILImage()
     fig = px.imshow(transform_img(training_data[sample_idx][0]))
     # Alternatively can simply use fig.show() to open html file on local port
-    fig.write_html(os.path.join(sys.path[0], f"Training_example{sample_idx}.html"))
+    fig.write_html(os.path.join(sys.path[0], args.output_dir ,f"Training_example{sample_idx}.html"))
 
     # Apply dataloader
     train_loader = DataLoader(dataset=training_data,
