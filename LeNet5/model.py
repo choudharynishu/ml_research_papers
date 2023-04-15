@@ -56,12 +56,13 @@ if __name__ == '__main__':
     parser.add_argument('--learning-rate', '-l', type=float, default=0.03, help="SGD learning rate")
     parser.add_argument('--output-dir', '-o', type=str, default='out/base', help="output directory for training logs")
     parser.add_argument('--batch-size', '-bs', type=int, default=64, help="Batch size for DataLoader")
+    parser.add_argument('--epochs', '-e', type=int, default=5, help="Number of Epochs for training data")
     args = parser.parse_args()
     print(vars(args))
     os.makedirs(os.path.join(sys.path[0], args.output_dir), exist_ok=True)
     # Experiment settings
-    BATCH_SIZE = 64
-    EPOCHS = 2
+    BATCH_SIZE = args.batch_size
+    EPOCHS = args.epochs
 
     # Pipeline to convert an image to a tensor
     # Consider applying transforms.Resize(20) later
@@ -101,7 +102,6 @@ if __name__ == '__main__':
         loss_val = 0.0
         for i, data in enumerate(train_loader, 0):
             inputs, labels = data
-
             #zero-out the gradient
             optimizer.zero_grad()
 
