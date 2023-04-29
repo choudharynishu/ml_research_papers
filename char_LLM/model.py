@@ -172,7 +172,7 @@ def training(language_tensor, line_tensor):
     for parameter in rnn.parameters():
         # parameter.data._add(self, other, alpha) In-place version of add()
         # If both alpha and other are specified, each element of other is scaled by alpha before being used.
-        parameter.data.add_(parameter.grad.data, alpha=learning_rate)
+        parameter.data.add_(parameter.grad.data, alpha=-1*learning_rate)
     return output, loss.item()
 
 
